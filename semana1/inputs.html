@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+</head>
+<body>
+    <h1>Tipos de Inputs</h1>
+    <input type="text" placeholder="Ingresa tu nombre" value="Pepito" name="nombre" id="nombre">
+
+    <input type="text" placeholder="Ingresa tu Apellido" value="" name="apellido" id="apellido">
+
+    <!--Number-->
+    <h2>input number</h2>
+    <input type="number" placeholder="ingrese su numero" name="numero" id="numero">
+
+    <h2>Input email y password</h2>
+    <input type="email" placeholder="Ingrese su correo" name="correo" id="mi_correo">
+
+    <input type="password" placeholder="Ingrese su password" name="password" id="mi_passoword">
+
+    <input type="submit" value="ingresar">
+
+    <h2>input de tipo Fecha y Hora</h2>
+
+    <input type="date">
+    <input type="time">
+    <input type="datetime-local">
+
+
+    <h2>input de tipo Archivo</h2>
+    <input type="file">
+
+    <!--Input only pfd-->
+    <p>Solo PDF</p>
+    <input type="file" accept="application/pdf">
+
+    <!--Input only images-->
+    <p>Solo imagenes</p>
+    <input type="file" accept="image/*">
+
+    <!--Input only video-->
+    <p>Solo Videos</p>
+    <input type="file" accept="video/*">
+
+    <!--Input only audio-->
+    <p>Solo Audio</p>
+    <input type="file" accept="audio/*">
+
+
+    <!--Inputs de tipo RADIO - CHECKBOX-->
+    <p>
+        <input type="radio" name="opcion_registro">Radio 1 <br>
+        <input type="radio" name="opcion_registro">Radio 2 <br>
+        <input type="radio" name="opcion_registro">Radio 3
+    </p>
+
+    <p>CHECKBOX</p>
+    <p>
+        <input type="checkbox" name="opcion_check[]">Checkbox 1 <br>
+        <input type="checkbox" name="opcion_check[]">Checkbox 2 <br>
+        <input type="checkbox" name="opcion_check[]">Checkbox 3
+    </p>
+
+    <h2>input tipo color</h2>
+    <input type="color">
+
+    <h2>input tipo rango</h2>
+    <input type="range">
+
+    <h2>input tipo search</h2>
+    <input type="search" placeholder="Ingresa tu busqueda">
+
+    <h2>inpit tel</h2>
+    <input type="tel">
+</body>
+</html>

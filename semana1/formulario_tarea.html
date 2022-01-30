@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body{
+            font-family: calibri;
+            background: rgb(252, 252, 252);
+        }
+        table{
+            border: 1px solid rgb(189, 188, 188);
+            padding: 20px;
+            border-radius: 5px; 
+            font-weight: 600;
+            background-color: #fff;
+        }
+        p{
+            text-align: center;
+            font-size: 2em;
+        }
+        td{
+            width: 200px;height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="">
+        <table>
+            <tbody>
+                <tr>
+                    <td colspan="3"><p>Registro de Usuario</p></td>
+                </tr>
+                <tr>
+                    <td>Nombre Completo</td>
+                    <td><input type="text" placeholder="Nombres" name="nombre" id="nombre" required></td>
+                    <td><input type="text" placeholder="Apellidos" name="apellido" id="apellido" required></td>
+                </tr>
+                <tr>
+                    <td>Fecha de Nacimiento</td>
+                    <td><input type="date" required name="fecha_nac" id="fecha-nac"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Dirección</td>
+                    <td colspan="2"><input  type="texto" placeholder="direccion" name="direccion" id="direccion"></td>
+                </tr>
+                <tr>
+                    <td>Numero de Teléfono</td>
+                    <td><input type="number" placeholder="tel" minlength="9" maxlength="9" name="tel" id="tel" required></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Correo Electrónico</td>
+                    <td colspan="2"><input type="email" placeholder="e-mail" name="email" id="email" required></td>
+                </tr>
+                <tr>
+                    <td>Cuales son tus intereses</td>
+                    <td>
+                        <input type="checkbox" name="opcion_check[]">Informática <br>
+                        <input type="checkbox" name="opcion_check[]">Arte Gráfico
+                    </td>
+                    <td>
+                        <input type="checkbox" name="opcion_check[]">Música<br>
+                        <input type="checkbox" name="opcion_check[]">Televisión
+                    </td>
+                </tr>
+                <tr>
+                    <td>Otros</td>
+                    <td colspan="2"><textarea name="msg" id="" cols="48" rows="3"></textarea></td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </form>
+</body>
+</html>

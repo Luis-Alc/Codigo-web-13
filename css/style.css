@@ -1,24 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
 .link-referencia{
-    background-color: orange;
-    color: #000;
+    background-color:red;
+    color: rgb(255, 255, 255);
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
+    margin: 20px;
+}
+h3{
+    margin: 20px;
+    font-size: 3em;
+}
+
+.divisor{
+    margin: 20px;
+    height: 4px;
+    background-color: #000;
+    border: none;
+    border-radius: 12px;
 }
 
 .link-referencia:hover{
-    text-decoration: underline;
-    color: #fff;
+    color: rgb(0, 0, 0);
+    background-color: salmon;
 }
 .contenedor-principal{
     text-align: center;
+    height: 100vh;
 }
 .imagen-perfil{
     width: 200px;
+    border: 2px solid #000;
+    border-radius:50%;
 
-    border-radius: 50%;
+}
 
+.imagen-programador{
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.contenedor-clases{
+    height: 100vh;
+    background-color: orange;
+}
+.lista-semanas{
+    margin: 40px;
+    padding: 40px;
+    list-style: none;
+}
+.lista-semanas li{
+    padding: 20px;
 }

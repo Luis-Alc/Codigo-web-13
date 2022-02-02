@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.banner{
+    background-color: royalblue;
+    height: 40vh;
+}
+.titulo{
+    font-size: 4em;
+    color: red;
+}
+.parrafo{
+    font-size: 50px;
+}
+.banner-medio{
+    height: 20vh;
+    background-color: purple;
+}
+.banner-dos{
+    background-color: cadetblue;
+    height: 40vh;
+}
+
+.banner-tres{
+    height: 100vh;
+    background-color: crimson;
+}
+
+.banner-cinco{
+    width: 300px;
+    height: 300px;
+    border: 12px solid red;
+
+}

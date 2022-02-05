@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+.gradiente-uno{
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(
+        45deg,
+        red,
+        rgb(255, 121, 121),
+        rgb(154, 154, 255),
+        rgb(255, 144, 144),
+        red);
+    color: white;
+}
+
+.gradiente-dos{
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to left top, red,black);
+}
+
+.gradiente-tres{
+    width: 600px;
+    height: 600px;
+    background: linear-gradient(
+        45deg,
+        red,
+        rgb(255, 121, 121),
+        rgb(154, 154, 255),
+        rgb(255, 144, 144),
+        red 50%), 
+        linear-gradient(127deg, red,black 25%);
+}
+.img-facebook{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border: solid;
+    object-fit: contain;
+}
+
+.yt-imagen{
+    width: 400px;
+    opacity: 0.5;
+}
+.yt-imagen-2{
+    width: 400px;
+    filter: grayscale(50%);
+}
+.yt-imagen-3{
+    filter: blur(50%);
+}
+img{
+    width: 400px;
+}

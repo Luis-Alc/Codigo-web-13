@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.section-principal{
+    display: flex;
+    /* Flex alinea los elementos en linea (row) */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.section-principal div{
+    /* border: 2px solid red; */
+    width: 25%;
+}
+.section-principal div p{
+    border: 4px solid red;
+}
+.section-dos{
+    display: flex;
+    align-items: center;
+    border: 4px solid rgb(26, 212, 20);
+    height: 50vh;
+}

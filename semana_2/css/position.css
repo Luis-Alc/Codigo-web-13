@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    position: fixed;
+    height: 15vh;
+    top: 0;
+    border: 3px solid green;
+    background-color: lightcoral;
+    display: block;
+    width: 100%;
+    z-index: 1;
+}
+.section-uno {
+    border: 3px solid orange;
+    position: relative;
+    height: 100vh;
+    top: 100px;
+  }
+  
+  .titulo-principal {
+    border: 3px solid rgb(60, 255, 0);
+  }
+
+  .contenido-dos{
+      border: 2px solid red;
+      height: 40vh;
+      position: relative;
+  }
+  
+  .contenedor-uno{
+      position: absolute;
+      bottom: 0;
+      left: 40%;
+  }
+  .contenedor-uno p{
+      display: inline-block;
+  }
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    border: 2px solid red;
+}

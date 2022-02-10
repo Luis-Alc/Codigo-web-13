@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.grid-container > *{
+    padding: 20px;
+    border: solid;
+    text-align: center;
+}
+.grid-container{
+    height: 100vh;
+    display: grid;
+    /* sirve para asignar un nombtr a las columnas */
+    grid-template-columns: 200px auto 200px;
+    grid-template-rows:  100px auto 100px;
+    grid-template-areas: 
+        "header header header"
+        "navbar sidebar main"
+        "footer footer footer"
+    ;
+}
+.header{
+    background-color: aqua;
+    grid-area: header;
+}
+.nav{
+    background-color: blueviolet;
+    grid-area: navbar;
+}
+.aside{
+    background-color: tomato;
+    grid-area: sidebar;
+}
+.container{
+    background-color: yellow;
+    grid-area: main;
+}
+.footer{
+    background-color: springgreen;
+    grid-area: footer;
+}

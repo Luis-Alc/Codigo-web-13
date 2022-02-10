@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Barlow", sans-serif;
+}
+
+.header{
+    background-image: url(../images/desktop/image-header.jpg);
+    height: 55vh;
+    background-color: #40bfff;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+
+}
+.nav div{
+    padding: 20px;
+}
+
+.menu-nav{
+    display: flex;
+    list-style: none;
+}
+.menu-nav li{
+    padding:10px  30px;
+}
+.menu-nav li a{
+    text-decoration: none;
+    color: white;
+}
+.btn-contact{
+    font-family: "Fraunces", serif;
+    background-color: hsl(0, 0%, 100%);
+    color: #000 !important;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+.content-title{
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+
+}
+.content-title h1{
+    font-family: "Fraunces", serif;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-bottom: 30px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 50vh 50vh 50vh 70vh 30vh; 
+    grid-template-areas: 
+        "transform transform transform-img transform-img"
+        "standout-img standout-img standout standout"
+        "cherry cherry orange orange"
+        "testimonials testimonials testimonials testimonials"
+        "milk orange-plate ice build"
+    ;
+}
+.grid-container div{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.item1{
+    grid-area: transform;
+}
+.item2{
+    background-image: url(../images/desktop/image-transform.jpg);
+    grid-area: transform-img;
+    background-color: #FFD302 !important;
+}
+.item3{
+    background-image: url(../images/desktop/image-stand-out.jpg);
+    grid-area: standout-img;
+    background-color: #FE7565;
+    
+}
+.item4{
+    grid-area: standout;
+}
+
+.container-text{
+    /* display: flex;
+    align-items: start;
+    flex-direction: column; */
+    width: 40%;
+    margin: auto;
+}
+
+.container-text h2{
+    font-family: "Fraunces", serif;
+    font-size: 2.2em;
+}
+.container-text a{
+    font-family: "Fraunces", serif;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.container-text *{
+    margin-bottom: 20px;
+}
+.container-text p{
+    color: hsl(213, 9%, 39%);
+}
+
+.learn-yellow{
+    border-bottom:5px solid #FFD302;
+}
+.learn-red{
+    border-bottom: 5px solid #FE7565;
+}
+
+.container-bottom *{
+    margin-bottom: 30px;
+}
+.container-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+}
+.container-bottom h3{
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+}
+.letter-green{
+    color: #24544c;
+}
+.letter-blue{
+    color: #19566d;
+}
+.container-bottom p{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.item5{
+    background-image: url(../images/desktop/image-graphic-design.jpg);
+    grid-area: cherry;
+    background-color: #9DDBCC;
+    
+}
+.item6{
+    background-image: url(../images/desktop/image-photography.jpg);
+    grid-area: orange;
+    background-color: #62CCFE;
+}
+
+.item7{
+    grid-area: testimonials;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item7 *{
+    margin-bottom: 30px;
+}
+.container-testimonials{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.img-round{
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+}
+.title-testimonials{
+    font-family:  "Fraunces", serif;
+    font-size: 1.3em;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: hsl(210, 4%, 67%);
+    margin-bottom: 50px;
+}
+.text-testimonials{
+    width: 70%;
+    margin: auto;
+    color: #19566d;
+}
+.mane-testimonials{
+    font-family:  "Fraunces", serif;
+    margin-top: 40px;
+    font-size: 0.8em;
+}
+
+.item8{
+    grid-area: milk;
+    background-image: url(../images/desktop/image-gallery-milkbottles.jpg);
+}
+.item9{
+    grid-area: orange-plate;
+    background-image: url(../images/desktop/image-gallery-orange.jpg);
+}
+.item10{
+    grid-area: ice;
+    background-image: url(../images/desktop/image-gallery-cone.jpg);
+}
+.item11{
+    grid-area: build;
+    background-image: url(../images/desktop/image-gallery-sugarcubes.jpg);
+}
+
+.menu-mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 375px) {
+    .nav{
+        display: none;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 50vh 50vh 50vh 50vh 100vh 100vh 170vh 25vh 25vh; 
+        grid-template-areas: 
+            "transform-img transform-img"
+            "transform transform "
+            "standout-img standout-img"
+            "standout standout"
+            "cherry cherry"
+            " orange orange"
+            "testimonials testimonials"
+            "milk orange-plate"
+            "ice build"
+        ;
+    }
+
+    .container-text{
+        width: 80%;
+        text-align: center;
+    }
+
+    .container-bottom p{
+        width: 80%;
+    }
+    .container-testimonials{
+        flex-direction: column;
+    }
+    .header{
+        height: 79vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-mobile{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .menu-mobile div{
+        padding: 20px;
+    }
+    .content-title h1{
+        margin-top: 26%;
+    }
+}

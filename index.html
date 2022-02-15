@@ -12,10 +12,9 @@
         <meta name="twitter:card">
         <title>Mi Portafolio</title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
-        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;800;900&display=swap" rel="stylesheet">
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/style.css">
 
     </head>
@@ -24,40 +23,99 @@
         <nav class="nav">
           <ul>
             <li>
-              <a href="">Works</a>
+              <a href="">Sobre mi</a>
             </li>
             <li>
-              <a href="">Blog</a>
+              <a href="">Proyectos</a>
             </li>
-            <li>
-              <a href="">Contact</a>
+            <li class="btn-contact">
+              <a href="">Contacto</a>
             </li>
           </ul>
         </nav>
       </header>
       <section class="banner">
-        <div>
-          <h1 class="title-uno">Hey I am Luis,</h1>
-          <h1 class="title-dos">a web developer</h1>
-          <p class="resume">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-          </p>
-          <button class="btn-primary">Download Resume</button>
+        <div class="fondo">
+          <div>
+            <h1 class="title-uno">Hey I am Luis,</h1>
+            <h1 class="title-dos">a web developer</h1>
+            <p class="resume">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+              sint. Velit officia consequat duis enim velit mollit. Exercitation
+              veniam consequat sunt nostrud amet.
+            </p>
+            <button class="btn-primary">Download Resume</button>
+          </div>
+          <div>
+            <img class="banner-img" src="./imagenes/background.png" alt="">
+          </div>
         </div>
       </section>
 
+      <!-- <hr class="linea"> -->
+
       <section class="section-works">
-        <h4 class="title-section">Estos son algunos de mis proyectos</h4>
+        <h4 class="title-section">All Proyects</h4>
         <div class="card-grid">
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
+          <div class="item1">
+            <div class="img">
+              <div class="content">
+                <div class="title-card">Reto #1</div>
+                <a href="./semana_2/reto1.html" class="btn">Ver Proyecto</a>
+              </div>
+            </div>
+          </div>
+          <div class="item2">
+            <div class="img">
+              <div class="content">
+                <div class="title-card">Reto #2</div>
+                <a href="./semana_2/reto2.html" class="btn">Ver Proyecto</a>
+              </div>
+            </div>
+          </div>
+          <div class="item3">
+            <div class="img">
+              <div class="content">
+                <div class="title-card">Reto #3</div>
+                <a href="./semana_2/reto3.html" class="btn">Ver Proyecto</a>
+              </div>
+            </div>
+          </div>
+          <div class="item4">
+            <div class="img">
+              <div class="content">
+                <div class="title-card">Reto #4</div>
+                <a href="./semana_3/dia1/reto4.html" class="btn">Ver Proyecto</a>
+              </div>
+            </div>
+          </div>
+          <div class="item5">
+            <div class="img">
+              <div class="content">
+                <div class="title-card">Reto #5</div>
+                <a href="./semana_3/dia1/reto5.html" class="btn">Ver Proyecto</a>
+              </div>
+            </div>
+          </div>
+          <div class="item6">
+            <div class="img">
+              <div class="content">
+                <div class="title-card">Reto #6</div>
+                <a href="" class="btn">Ver Proyecto</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
+      <footer class="footer">
+        <h1 class="title-section">Contact</h1>
+        <div class="contact">
+          <input type="text" placeholder="Nombre">
+          <input type="text" placeholder="Email">
+          <input type="text" placeholder="Asunto">
+          <textarea name="" id="" cols="" rows="" placeholder="Mensaje"></textarea>
+        </div>
+      </footer>
     </body>
 </html>

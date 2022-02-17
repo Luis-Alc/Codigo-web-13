@@ -6,7 +6,7 @@
 
 //!! :eye: siempre empezar a contar los indices desde el 0
 const alumnos = ["Erick", "Karina", "Patricia", "kjaris", "Bruno"];
-let alumnos = ["Erick", "Karina", "Patricia", "kjaris", "Bruno"];
+let transporte = ["", "avion", "barco"];
 console.log("alumnos", alumnos);
 
 //** Pueda contener datos de distintos tipos */

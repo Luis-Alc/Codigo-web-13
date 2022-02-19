@@ -23,6 +23,8 @@ const productos = [
   },
 ];
 
+
+
 productos.forEach((producto) => {
   // dentro del forEach podemos hacer lo que queramos
   console.log(producto);

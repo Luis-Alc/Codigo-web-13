@@ -1,3 +1,15 @@
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background-color: #ffffff;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 5px;
+  background-color: #aaaaaa;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +24,8 @@
     color: #fff;
     box-sizing: border-box;
   }
+
+  
   
   .grid-container {
     display: grid;
@@ -35,11 +49,16 @@
   .container-tema ul > li a {
     color: rgb(161, 161, 161);
     text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .container-tema ul li a:hover{
+    color: rgb(255, 66, 66);
   }
   
-  .grid-container > div {
+  /* .grid-container > div {
     border: solid 1px #ccc;
-  }
+  } */
   
   .item1 {
     grid-area: menu;
@@ -49,6 +68,7 @@
     height: 100%;
     /* esto es para activar el scroll */
     overflow: auto;
+    z-index: 1;
 
   }
   .item2 {
@@ -57,16 +77,19 @@
     position: fixed;
     width: calc(100% - 300px);
     right: 0;
+    border-bottom: 2px solid #ccc;
 
   }
   .item3 {
     grid-area: content;
     background-color: #0a192a;
     overflow: auto;
-    scroll-behavior: smooth;
-  
+    scroll-behavior: smooth; 
   }
-  
+
+  .document-container p{
+    width: 80%;
+  }
   .document-container {
     margin: 30px;
     margin-bottom: 30px;
@@ -80,7 +103,7 @@
     background-color: rgb(0, 30, 60);
     border: 1px solid #ccc;
     border-radius: 6px;
-    width: 70%;
+    width: 80%;
     margin-left: 12px;
     font-family: "Inconsolata" !important;
   }

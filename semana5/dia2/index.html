@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase Dia 2 / semana 5</title>
+</head>
+<body>
+    <h1>Eventos</h1>
+    <!-- La forma de poder capturar los eventos de mis elementos es usando los 
+    atributos de mi elemento -->
+    <button onclick="console.log(`Mi primer click`)">Mi Primer Click</button>
+
+
+    <p onmouseover="console.log(`Hemos pasado el mouse sobre el p`)">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque libero hic reiciendis doloribus cumque. Tenetur perferendis repellendus ipsa, sunt magnam iusto quisquam delectus veniam, reprehenderit dolor pariatur reiciendis tempora iure.
+    </p>
+
+    <!-- Evento dobleclick: ondbclick -->
+    <button 
+    ondblclick="console.log(`Evento doble Click`)"
+    onclick="this.style.color = `#f01`"
+    >
+        Evento doble click
+    </button>
+
+    <button onclick="imprimir()">Click desde JS</button>
+
+
+<div>
+    <h2>Calculadora basica</h2>
+    <input type="text" placeholder="Numero 1" id="numero1">
+    <input type="text" placeholder="Numero 2" id="numero2">
+    <button onclick="calculadorHTML(`+`)">+</button>
+    <button onclick="calculadorHTML(`-`)">-</button>
+    <button onclick="calculadorHTML(`*`)">*</button>
+    <button onclick="calculadorHTML(`/`)">/</button>
+    <div id="resultado"></div>
+</div>
+    <script src="./eventos.js"></script>
+    <script src="./operaciones.js"></script>
+</body>
+</html>

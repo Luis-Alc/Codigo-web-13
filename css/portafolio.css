@@ -1,0 +1,130 @@
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+   background-color: #aaa;
+}
+::-webkit-scrollbar-thumb{
+   border-radius: 5px;
+   background-color: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+    background-image: url(../imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top left;
+    background-attachment:fixed;
+}
+.container-social{
+    height: 5vh;
+    background-color: #ff4900;
+}
+.container-header{
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+}
+.logo{
+    color: #fff;
+    font-size: 3em;
+    font-weight: 700;
+}
+.main ul{
+    display: flex;
+    list-style: none;
+}
+.box{
+    background-color: #ff4900;
+}
+.main ul li{
+    width: 120px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    padding: 0 10px;
+}
+.main ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.container-banner{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(90deg,rgb(0,0,0,0.5),#000);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    
+}
+.container-banner>div{
+    width: 50%;
+    height: 100%;
+}
+.info{
+    width: 40% !important;
+    margin-left: 5%;
+    height: 50% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background:rgb(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+    animation-name: fondo;
+}
+@keyframes fondo{
+    20%{
+        width: 100%;
+        
+    }
+}
+.info>div{
+    margin: 50px 0;
+}
+.uno .tres{
+    font-size: 1em;
+    font-weight: 100;
+}
+.dos{
+    font-size: 5em;
+    font-weight: 700;
+}
+.buttons button{
+    background-color: #ff4900;
+    color: #fff;
+    margin: 0 10px;
+    width: 150px;
+    border: none;
+    padding: 20px 20px;
+    font-size: 1em;
+    border-radius: 8px;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img{
+    margin: 0 auto  ;
+}
+
+.container-section{
+    height: 100vh;
+    border: 1px solid #fff;
+    background-color: crimson;
+}

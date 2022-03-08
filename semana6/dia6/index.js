@@ -1,0 +1,1 @@
+const url_STAR_WAR = "https://swapi.dev/api/people"

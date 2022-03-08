@@ -1,0 +1,39 @@
+@import "./variables.scss";
+
+
+
+@mixin alerta ($bg: rgb(26, 224, 26) ){
+    background-color: $bg;
+    padding: $arriba;
+    border-radius: $arriba;
+    color: #fff;
+    margin: $arriba;
+}
+
+.success{
+    @include alerta()
+}
+.info{
+    @include alerta($bg: yellow)
+}
+.warning{
+    @include alerta($bg: orangered)
+}
+.danger{
+    @include alerta($bg: red)
+}
+
+
+@mixin generate-icons($name, $icon, $color, $size) {
+    .div-icon-#{$name}{
+        background: url("./images/#{$icon}");
+        border: solid 2px $color;
+        width: $size;
+        height: $size;
+    }
+}
+
+@include generate-icons("phone","phone.jpeg", rgb(252, 67, 107) , 400px);
+@include generate-icons("mail","mail.jpeg", rgb(67, 252, 122) , 400px);
+@include generate-icons("search","google.png", rgb(101, 67, 252) , 400px);
+@include generate-icons("laptop","laptop.png", rgb(252, 67, 67) , 400px);

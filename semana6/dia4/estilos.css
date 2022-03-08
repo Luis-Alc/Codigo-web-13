@@ -1,0 +1,60 @@
+.success {
+  background-color: #1ae01a;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  margin: 10px;
+}
+
+.info {
+  background-color: yellow;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  margin: 10px;
+}
+
+.warning {
+  background-color: orangered;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  margin: 10px;
+}
+
+.danger {
+  background-color: red;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  margin: 10px;
+}
+
+.div-icon-phone {
+  background: url("./images/phone.jpeg");
+  border: solid 2px #fc436b;
+  width: 400px;
+  height: 400px;
+}
+
+.div-icon-mail {
+  background: url("./images/mail.jpeg");
+  border: solid 2px #43fc7a;
+  width: 400px;
+  height: 400px;
+}
+
+.div-icon-search {
+  background: url("./images/google.png");
+  border: solid 2px #6543fc;
+  width: 400px;
+  height: 400px;
+}
+
+.div-icon-laptop {
+  background: url("./images/laptop.png");
+  border: solid 2px #fc4343;
+  width: 400px;
+  height: 400px;
+}
+/*# sourceMappingURL=estilos.css.map */

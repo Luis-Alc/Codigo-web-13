@@ -1,6 +1,48 @@
-
-.text-title{
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+}
+.text-title-uno{
+    color:  rgba(255, 255, 255, 0.1);
+    text-transform:uppercase;
+    font-size: 4em;
+    position: absolute;
+    font-weight: 700;
+    top: 0;
+}
+.text-title {
     text-transform: capitalize;
     font-weight: 700;
-    font-size: 1em;
+    font-size: 1.7em;
+}
+
+.card-body img{
+    width: 200px;
+    z-index: 1;
+}
+.btn-detalle {
+    text-align: center;
+    padding: 4px 0;
+    font-weight: 500;
+    border: none;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    z-index: 1;
+}
+
+.detalle-modal{
+    background-color: #fff;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    padding: 20px;
+}
+.detalle-modal>div{
+    width: 50%;
+}
+.contenedor-info div{
+    width: 50%;
 }
